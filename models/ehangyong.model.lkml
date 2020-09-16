@@ -5,7 +5,7 @@ include: "/views/**/*.view"
 
 datagroup: ehangyong_default_datagroup {
   sql_trigger: SELECT CURRENT_DATETIME() as now;;
-  max_cache_age: "7 minute"
+  max_cache_age: "4 minute"
 }
 
 persist_with: ehangyong_default_datagroup
