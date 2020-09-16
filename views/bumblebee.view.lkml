@@ -1,6 +1,24 @@
 view: bumblebee {
-  sql_table_name: `test_mark_cheap_price.Bumblebee`
-    ;;
+#  sql_table_name: `test_mark_cheap_price.Bumblebee`
+#    ;;
+  derived_table: {
+    sql:
+      select Year_nm
+          , Month_nm
+          , Account_Name
+          , Region
+          , Category
+          , sum(Cost) as Cost
+          , sum(Qty) as Qty
+    from Bumblebee
+    group by
+          Year_nm
+          , Month_nm
+          , Account_Name
+          , Region
+          , Category ;;
+  }
+
 
   dimension: account_name {
     type: string
