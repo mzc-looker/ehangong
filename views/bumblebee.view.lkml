@@ -17,6 +17,8 @@ view: bumblebee {
           , Account_Name
           , Region
           , Category ;;
+
+    persist_for: "5 minute"  ## Best practice would be to use `datagroup_trigger: ecommerce_etl` but we don't here for snowflake costs
   }
 
 
