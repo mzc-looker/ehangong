@@ -4,8 +4,8 @@ connection: "mzcdsc-team-200716"
 include: "/views/**/*.view"
 
 datagroup: ehangyong_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  sql_trigger: SELECT CURRENT_DATETIME() as now;;
+  max_cache_age: "5 minute"
 }
 
 persist_with: ehangyong_default_datagroup
