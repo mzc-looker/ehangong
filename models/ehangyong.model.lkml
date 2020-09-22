@@ -4,7 +4,7 @@ connection: "mzcdsc-team-200716"
 include: "/views/**/*.view"
 
 datagroup: ehangyong_default_datagroup {
-  sql_trigger: SELECT CURRENT_DATETIME() as now;;
+  #sql_trigger: SELECT CURRENT_DATETIME() as now;;
   max_cache_age: "1000 hours"
 }
 
