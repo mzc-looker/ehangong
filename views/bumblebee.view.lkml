@@ -20,7 +20,7 @@ view: bumblebee {
 
     #datagroup_trigger: ehangyong_default_datagroup
     #sql_trigger_value: SELECT CURRENT_DATETIME() as now;;
-    persist_for: "5 minute"  ## Best practice would be to use `datagroup_trigger: ecommerce_etl` but we don't here for snowflake costs
+    #persist_for: "5 minute"  ## Best practice would be to use `datagroup_trigger: ecommerce_etl` but we don't here for snowflake costs
   }
 
 
